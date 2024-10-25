@@ -4,7 +4,6 @@ import (
     "fmt"
     "net/http"
     "log"
-    "strings"
 )
 
 func main() {
