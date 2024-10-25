@@ -9,6 +9,7 @@ import (
 func main() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         log.Println("Handling request to Root")
+        log.Printf("Handling request to %s", r.URL.Path)
         fmt.Fprintf(w, "Hello, World! Slurp")
     })
 
